@@ -8,10 +8,10 @@ partHashed = hashlib.sha256(text.encode('utf-8'))
 hashed = partHashed.hexdigest()
 print("Guess the password!")
 print(f"First letter: {first}")
-print('''
-Hash: {}
+print(f'''
+Hash: {hashed}
 The hash is a encoded version of the password.
-'''.format(hashed))
+''')
 def theFunPart():
     guess = input("Answer: ")
     partHashed2 = hashlib.sha256(guess.encode('utf-8'))
