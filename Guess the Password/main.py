@@ -7,7 +7,7 @@ os.system('cls')
 partHashed = hashlib.sha256(text.encode('utf-8'))
 hashed = partHashed.hexdigest()
 print("Guess the password!")
-print("First letter:", first)
+print(f"First letter: {first}")
 print('''
 Hash: {}
 The hash is a encoded version of the password.
